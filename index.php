@@ -1,3 +1,2 @@
 <?php
-echo "123";
-/php>
+echo "Hello LINE BOT";
