@@ -18,8 +18,7 @@ if (!is_null($events['events'])) {
 			//$text = $event['replyToken'];
 			$text = $event['source']['userId'];
 			// Build message to reply back
-			$messages = [	
-	
+			/*$messages = [	
   'type'=> 'template',
   'altText'=> 'this is a buttons template',		
   'template'=> {
@@ -33,16 +32,28 @@ if (!is_null($events['events'])) {
             'data'=> 'action=buy&itemid=123'
           }
   }
-
-				
-
-			];
+			];*/
+			
 
 			// Make a POST Request to Messaging API to reply to sender
 			$url = 'https://api.line.me/v2/bot/message/reply';
 			$data = [
 				'replyToken' => $replyToken,
-				'messages' => [$messages],
+				//'messages' => [$messages],
+				'type'=> 'template',
+  				'altText'=> 'this is a buttons template',		
+  				'template'=> {
+      				'type'=>'buttons',
+				'thumbnailImageUrl'=> 'https://example.com/bot/images/image.jpg',
+      				'title'=> 'Menu',
+      				'text'=> 'Please select',
+      				'actions'=> 
+          				{
+            				'type'=> 'postback',
+            				'label'=> 'Buy',
+            				'data'=> 'action=buy&itemid=123'
+          					}
+  				}
 			];
 			$post = json_encode($data);
 			$headers = array('Content-Type: application/json', 'Authorization: Bearer ' . $access_token);
