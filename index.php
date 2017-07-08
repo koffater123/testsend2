@@ -28,7 +28,7 @@ if (!is_null($events['events'])) {
       'text'=> "Please select",
       'actions'=> [
           {
-            'type"=> 'postback',
+            'type'=> 'postback',
             'label'=> "Buy",
             'data'=> 'action=buy&itemid=123'
           }
