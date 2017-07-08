@@ -20,8 +20,8 @@ if (!is_null($events['events'])) {
 			// Build message to reply back
 			$messages = [
 				'type'=> 'image',
-    				'originalContentUrl'=> 'https://www.dropbox.com/s/rd637zx42r1kef2/123.jpg?dl=0',
-    				'previewImageUrl'=> 'https://www.dropbox.com/s/rd637zx42r1kef2/123.jpg?dl=0'
+    				'originalContentUrl'=> 'https://www.dropbox.com/s/rd637zx42r1kef2/123.jpg',
+    				'previewImageUrl'=> 'https://www.dropbox.com/s/rd637zx42r1kef2/123.jpg'
 				/*
 				'type'=> 'template',
   				'altText'=> 'this is a buttons template',		
