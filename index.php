@@ -21,21 +21,19 @@ if (!is_null($events['events'])) {
 			$messages = [	
 	
   'type'=> 'template',
-  'altText'=> "this is a buttons template"
-				/*
-  "template": {
-      "type": "buttons",
-      "thumbnailImageUrl": "https://example.com/bot/images/image.jpg",
-      "title": "Menu",
-      "text": "Please select",
-      "actions": 
+  'altText'=> 'this is a buttons template',		
+  'template'=> {
+      'type'=>'buttons',
+      'title'=> 'Menu',
+      'text'=> 'Please select',
+      'actions'=> 
           {
-            "type": "postback",
-            "label": "Buy",
-            "data": "action=buy&itemid=123"
+            'type'=> 'postback',
+            'label'=> 'Buy',
+            'data'=> 'action=buy&itemid=123'
           }
   }
-*/
+
 				
 
 			];
