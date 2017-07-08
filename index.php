@@ -44,7 +44,7 @@ if (!is_null($events['events'])) {
   				'altText'=> 'this is a buttons template',		
   				'template'=> {
       				'type'=>'buttons',
-				'thumbnailImageUrl'=> 'https://example.com/bot/images/image.jpg',
+				'thumbnailImageUrl'=> 'https://www.dropbox.com/s/rd637zx42r1kef2/123.jpg?dl=0',
       				'title'=> 'Menu',
       				'text'=> 'Please select',
       				'actions'=> 
