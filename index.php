@@ -20,8 +20,8 @@ if (!is_null($events['events'])) {
 			// Build message to reply back
 			$messages = [
 				'type'=> 'image',
-    				'originalContentUrl'=> 'https://www.dropbox.com/s/rd637zx42r1kef2/123.jpg',
-    				'previewImageUrl'=> 'https://www.dropbox.com/s/rd637zx42r1kef2/123.jpg'
+    				'originalContentUrl'=> 'https://4.bp.blogspot.com/-MjV8_HwH8KU/V_oxD8HITUI/AAAAAAAAkaI/6Zdel4AHUGg19kHssbvRjy0rVidN0ydCACLcB/s1600/bottrial-fig1.png',
+    				'previewImageUrl'=> 'https://4.bp.blogspot.com/-MjV8_HwH8KU/V_oxD8HITUI/AAAAAAAAkaI/6Zdel4AHUGg19kHssbvRjy0rVidN0ydCACLcB/s1600/bottrial-fig1.png'
 				/*
 				'type'=> 'template',
   				'altText'=> 'this is a buttons template',		
