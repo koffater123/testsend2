@@ -1,14 +1,16 @@
 
 //$access_token = 'bnIAGqcA6ofn7+FQheIsUheTKpCBW+ykQgLIg+jjSMts39TV+io9w4Pc3IHfEmK7RA2jkLXfYgrhxgPMX8DaHJszuHnaSJ9oHJhoUdadNXPCOXAqoBYR+FtV5rlBOFSzOx2LXsTmgYBdis/FGNiWyQdB04t89/1O/w1cDnyilFU=';
 <?php
+$access_token = 'bnIAGqcA6ofn7+FQheIsUheTKpCBW+ykQgLIg+jjSMts39TV+io9w4Pc3IHfEmK7RA2jkLXfYgrhxgPMX8DaHJszuHnaSJ9oHJhoUdadNXPCOXAqoBYR+FtV5rlBOFSzOx2LXsTmgYBdis/FGNiWyQdB04t89/1O/w1cDnyilFU=';
+$chid='1523515135';
 require_once '../vendor/autoload.php';
 use Monolog\Logger;
 use Monolog\Handler\StreamHandler;
 use Monolog\Handler\FirePHPHandler;
 $logger = new Logger('LineBot');
 $logger->pushHandler(new StreamHandler('php://stderr', Logger::DEBUG));
-$httpClient = new \LINE\LINEBot\HTTPClient\CurlHTTPClient($_ENV["LINEBOT_ACCESS_TOKEN"]);
-$bot = new \LINE\LINEBot($httpClient, ['channelSecret' => $_ENV["LINEBOT_CHANNEL_SECRET"]]);
+$httpClient = new \LINE\LINEBot\HTTPClient\CurlHTTPClient($access_token);
+$bot = new \LINE\LINEBot($httpClient, ['channelSecret' => $chid);
 $signature = $_SERVER['HTTP_' . \LINE\LINEBot\Constant\HTTPHeader::LINE_SIGNATURE];
 try {
 	$events = $bot->parseEventRequest(file_get_contents('php://input'), $signature);
