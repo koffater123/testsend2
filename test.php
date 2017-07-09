@@ -1,10 +1,10 @@
 <?php
 			$messages = array(
 				  'type'=> 'template',
-				  'altText'=> 'this is a confirm template'/*,
+				  'altText'=> 'this is a confirm template',
 				'template'=>array (
 			      'type'=> 'confirm',
-			      'text'=> 'Are you sure?',
+			      'text'=> 'Are you sure?'/*,
 			      'actions'=>array (
 				  (
 				    'type'=> 'message',
@@ -18,6 +18,7 @@
 				  )
 			      )
 			  )*/
+					)
 								);
 $array = array(
     "foo" => "bar",
