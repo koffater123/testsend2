@@ -1,8 +1,8 @@
 <?php
-			$messages = array[
+			$messages = array(
 				  'type'=> 'template',
 				  'altText'=> 'this is a confirm template'
-					];
+					);
 $array = array(
     "foo" => "bar",
     42    => 24,
