@@ -1,12 +1,12 @@
 <?php
-			/*$messages = [
+			$messages = [
 				  'type'=> 'template',
 				  'altText'=> 'this is a confirm template'
 				
-				  'template'=> (
+				  'template'=> array(
 				      'type'=> 'confirm',
 				      'text'=> 'Are you sure?',
-				      'actions'=> (
+				      'actions'=> array(
 					  (
 					    'type'=> 'message',
 					    'label'=> 'Yes',
@@ -20,7 +20,7 @@
 				      )
 				  )
 
-					];*/
+					];
 $array = array(
     "foo" => "bar",
     42    => 24,
@@ -34,4 +34,4 @@ $array = array(
 
 echo "OK";
 echo $array['foo'];
-//echo $messages['type'];
+echo $messages['type'];
