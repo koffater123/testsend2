@@ -1,5 +1,5 @@
 <?php
-			$messages = [
+		/*	$messages = [
 				  'type'=> 'template',
 				  'altText'=> 'this is a confirm template',
 				  'template'=> {
@@ -19,6 +19,6 @@
 				      ]
 				  }
 
-					];
+					];*/
 
 echo "OK";
