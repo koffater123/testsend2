@@ -20,9 +20,25 @@ if (!is_null($events['events'])) {
 
 			// Build message to reply back
 			$messages = [
-      				'type'=> 'confirm',
-			      	'text'=> 'Are you sure?'
-				
+				  'type'=> 'template',
+				  'altText'=> 'this is a confirm template',
+				  'template'=> {
+				      'type'=> 'confirm',
+				      'text'=> 'Are you sure?',
+				      'actions'=> [
+					  {
+					    'type'=> 'message',
+					    'label'=> 'Yes',
+					    'text'=> 'yes'
+					  },
+					  {
+					    'type'=> 'message',
+					    'label'=> 'No',
+					    'text'=> 'no'
+					  }
+				      ]
+				  }
+
 					];
 					/*
 			      	'actions'=> [
