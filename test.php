@@ -1,5 +1,5 @@
 <?php
-			$messages = [
+			$messages = array[
 				  'type'=> 'template',
 				  'altText'=> 'this is a confirm template'
 				
