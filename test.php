@@ -4,20 +4,8 @@
 				  'altText'=> 'this is a confirm template',
 				  'template'=> array(
 				      'type'=> 'confirm',
-				      'text'=> 'Are you sure?',
-				      'actions'=> array(
-					  (
-					    'type'=> 'message',
-					    'label'=> 'Yes',
-					    'text'=> 'yes'
-					  ),
-					  (
-					    'type'=> 'message',
-					    'label'=> 'No',
-					    'text'=> 'no'
-					  )
-				      )
-				  )
+				      'text'=> 'Are you sure?'
+				     )
 
 					];
 $array = array(
