@@ -23,4 +23,4 @@
 					];
 
 echo "OK";
-echo $messages;
+echo $messages['type'];
