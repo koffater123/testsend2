@@ -11,7 +11,7 @@
 					    'label'=> 'Yes',
 					    'text'=> 'yes'
 					  ),
-					  )
+					  (
 					    'type'=> 'message',
 					    'label'=> 'No',
 					    'text'=> 'no'
