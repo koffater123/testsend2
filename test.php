@@ -6,18 +6,16 @@
 			      'type'=> 'confirm',
 			      'text'=> 'Are you sure?',
 			      'actions'=>array (
-				  (
+				  array(
 				    'type'=> 'message',
 				    'label'=> 'Yes',
 				    'text'=> 'yes'
 				  ),
-				  (
+				  array(
 				    'type'=> 'message',
 				    'label'=> 'No',
 				    'text'=> 'no'
 				  )
-			      
-			  
 					)
 					)
 								);
