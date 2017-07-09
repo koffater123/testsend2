@@ -1,12 +1,7 @@
 <?php
 			$messages = array[
 				  'type'=> 'template',
-				  'altText'=> 'this is a confirm template',
-				  'template'=> array(
-				      'type'=> 'confirm',
-				      'text'=> 'Are you sure?'
-				     )
-
+				  'altText'=> 'this is a confirm template'
 					];
 $array = array(
     "foo" => "bar",
