@@ -19,42 +19,27 @@ if (!is_null($events['events'])) {
 			$replyToken = $event['replyToken'];
 
 			// Build message to reply back
-			$messages = [
+			
+				  $messages = array(
 				  'type'=> 'template',
 				  'altText'=> 'this is a confirm template',
-				  'template'=> {
-				      'type'=> 'confirm',
-				      'text'=> 'Are you sure?',
-				      'actions'=> [
-					  {
-					    'type'=> 'message',
-					    'label'=> 'Yes',
-					    'text'=> 'yes'
-					  },
-					  {
-					    'type'=> 'message',
-					    'label'=> 'No',
-					    'text'=> 'no'
-					  }
-				      ]
-				  }
-
-					];
-					/*
-			      	'actions'=> [
-				  {
+				'template'=>array (
+			      'type'=> 'confirm',
+			      'text'=> 'Are you sure?',
+			      'actions'=>array (
+				  array(
 				    'type'=> 'message',
 				    'label'=> 'Yes',
 				    'text'=> 'yes'
-				  },
-				  {
-				    'type'=>'message',
+				  ),
+				  array(
+				    'type'=> 'message',
 				    'label'=> 'No',
 				    'text'=> 'no'
-				  }
-			      ]
-			  }
-			];*/
+				  )
+					)
+					)
+								);
 
 			// Make a POST Request to Messaging API to reply to sender
 			$url = 'https://api.line.me/v2/bot/message/reply';
