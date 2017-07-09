@@ -89,5 +89,6 @@ foreach ($events as $event) {
 			break;
 		}
 		$response = $bot->replyMessage($event->getReplyToken(), $outputText);
+		echo $response . "\r\n";
 	}
 }  
