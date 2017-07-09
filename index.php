@@ -24,7 +24,9 @@ if (!is_null($events['events'])) {
   				'altText'=> 'this is a confirm template',
   				'template'=> {
       				'type'=> 'confirm',
-			      	'text'=> 'Are you sure?',
+			      	'text'=> 'Are you sure?'
+					];
+					/*
 			      	'actions'=> [
 				  {
 				    'type'=> 'message',
@@ -38,7 +40,7 @@ if (!is_null($events['events'])) {
 				  }
 			      ]
 			  }
-			];
+			];*/
 
 			// Make a POST Request to Messaging API to reply to sender
 			$url = 'https://api.line.me/v2/bot/message/reply';
