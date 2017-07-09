@@ -19,11 +19,14 @@ if (!is_null($events['events'])) {
 			$text = $event['source']['userId'];
 			// Build message to reply back
 			$messages = [
+				"type": "text",
+    				"text": "Hello, world"
 				/*
 				'type'=> 'image',
     				'originalContentUrl'=> 'https://4.bp.blogspot.com/-MjV8_HwH8KU/V_oxD8HITUI/AAAAAAAAkaI/6Zdel4AHUGg19kHssbvRjy0rVidN0ydCACLcB/s1600/bottrial-fig1.png',
     				'previewImageUrl'=> 'https://4.bp.blogspot.com/-MjV8_HwH8KU/V_oxD8HITUI/AAAAAAAAkaI/6Zdel4AHUGg19kHssbvRjy0rVidN0ydCACLcB/s1600/bottrial-fig1.png'
 				*/
+				/*
 				'type'=> 'template',
   				'altText'=> 'this is a buttons template',		
   				'template'=> {
@@ -44,7 +47,7 @@ if (!is_null($events['events'])) {
             'text'=> 'no'
           }
       ]
-  				}
+  				}*/
 			];
 			// Make a POST Request to Messaging API to reply to sender
 			$url = 'https://api.line.me/v2/bot/message/reply';
