@@ -23,9 +23,11 @@ $password = "1234";
 $dbname = "db";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
+			
 // Check connection
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
+	$messages = "Die";
 } 
 
 $sql = "SELECT id, name FROM id";
@@ -67,7 +69,7 @@ $conn->close();
 					)
 					)
 								);*/
-			$messages =$nam;
+			//$messages =$nam;
 			// Make a POST Request to Messaging API to reply to sender
 			$url = 'https://api.line.me/v2/bot/message/reply';
 			$data = [
