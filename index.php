@@ -49,8 +49,8 @@ $conn->close();
 		*/	
 $messages = [
 	'type'=> 'image',
-    'originalContentUrl'=> 'https://www.mx7.com/i/2e3/0O4jrc.jpg',
-    'previewImageUrl'=> 'https://www.mx7.com/i/2e3/0O4jrc.jpg'
+    'originalContentUrl'=> 'https://www.uppic.org/thumb-95EE_5964DA25.jpg',
+    'previewImageUrl'=> 'https://www.uppic.org/thumb-95EE_5964DA25.jpg'
 			];
 		
 			//$messages =$nam;
