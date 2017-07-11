@@ -49,8 +49,8 @@ $conn->close();
 		*/	
 $messages = [
 	'type'=> 'image',
-    'originalContentUrl'=> 'https://drive.google.com/file/d/0B0JSYGQun7tOaWJVc1N3dUdZaFE/view?usp=sharing',
-    'previewImageUrl'=> 'https://drive.google.com/file/d/0B0JSYGQun7tOaWJVc1N3dUdZaFE/view?usp=sharing'
+    'originalContentUrl'=> 'https://drive.google.com/uc?id=0B0JSYGQun7tOaWJVc1N3dUdZaFE',
+    'previewImageUrl'=> 'https://drive.google.com/uc?id=0B0JSYGQun7tOaWJVc1N3dUdZaFE'
 			];
 		
 			//$messages =$nam;
