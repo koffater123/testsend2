@@ -49,8 +49,8 @@ $conn->close();
 			
 $messages = [
 	'type'=> 'image',
-    'originalContentUrl'=> 'https://cdn.shopify.com/s/files/1/0379/7669/products/sampleset2_1024x1024.JPG?v=1458740363',
-    'previewImageUrl'=> 'https://cdn.shopify.com/s/files/1/0379/7669/products/sampleset2_1024x1024.JPG?v=1458740363'
+    'originalContentUrl'=> 'https://drive.google.com/open?id=0B0JSYGQun7tOaWJVc1N3dUdZaFE',
+    'previewImageUrl'=> 'https://drive.google.com/open?id=0B0JSYGQun7tOaWJVc1N3dUdZaFE'
 			];
 		
 			//$messages =$nam;
