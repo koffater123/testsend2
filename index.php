@@ -48,8 +48,9 @@ if ($result->num_rows > 0) {
 $conn->close();
 			
 $messages = [
-				'type' => 'text',
-				'text' => $nam
+	'type'=> 'image',
+    'originalContentUrl'=> 'http://botdata.ddns.net/1.jpg',
+    'previewImageUrl'=> 'http://botdata.ddns.net/1.jpg'
 			];
 		
 			//$messages =$nam;
