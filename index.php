@@ -17,9 +17,36 @@ if (!is_null($events['events'])) {
 			$text = $event['message']['text'];
 			// Get replyToken
 			$replyToken = $event['replyToken'];
+$servername = "110.78.129.10";
+$username = "root";
+$password = "1234";
+$dbname = "db";
 
+$conn = new mysqli($servername, $username, $password, $dbname);
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+} 
+
+$sql = "SELECT id, name FROM id";
+$result = $conn->query($sql);
+
+if ($result->num_rows > 0) {
+    // output data of each row
+    while($row = $result->fetch_assoc()) {
+		$nam = $row["name"];
+        //echo "id: " . $row["id"]. " - Name: " . $row["name"]. "<br>";
+		
+		
+    }
+} else {
+    //echo "0 results";
+}
+$conn->close();
+
+//echo $nam;
 			// Build message to reply back
-			
+			/*
 				  $messages = array(
 				  'type'=> 'template',
 				  'altText'=> 'this is a confirm template',
@@ -39,8 +66,8 @@ if (!is_null($events['events'])) {
 				  )
 					)
 					)
-								);
-
+								);*/
+			$messages =$nam;
 			// Make a POST Request to Messaging API to reply to sender
 			$url = 'https://api.line.me/v2/bot/message/reply';
 			$data = [
