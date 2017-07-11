@@ -27,7 +27,7 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 // Check connection
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
-	$messages = "Die";
+	
 } 
 
 $sql = "SELECT id, name FROM id";
@@ -45,7 +45,7 @@ if ($result->num_rows > 0) {
     //echo "0 results";
 }
 $conn->close();
-
+$messages = "Die";
 //echo $nam;
 			// Build message to reply back
 			/*
