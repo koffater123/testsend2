@@ -49,8 +49,8 @@ $conn->close();
 			
 $messages = [
 	'type'=> 'image',
-    'originalContentUrl'=> 'http://thumbs1.ebaystatic.com/d/l225/m/mMw-RVRSheevBxBEneZiVfA.jpg',
-    'previewImageUrl'=> 'http://thumbs1.ebaystatic.com/d/l225/m/mMw-RVRSheevBxBEneZiVfA.jpg'
+    'originalContentUrl'=> 'https://ucarecdn.com/2e6b7f23-9143-4b71-94e7-338bbf278c01/',
+    'previewImageUrl'=> 'https://ucarecdn.com/2e6b7f23-9143-4b71-94e7-338bbf278c01/'
 			];
 		
 			//$messages =$nam;
