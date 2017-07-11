@@ -18,7 +18,7 @@ if (!is_null($events['events'])) {
 			// Get replyToken
 			$replyToken = $event['replyToken'];
 			
-$servername = "110.78.129.10";
+$servername = "botdata.ddns.net";
 $username = "root";
 $password = "1234";
 $dbname = "db";
