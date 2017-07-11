@@ -17,7 +17,7 @@ if (!is_null($events['events'])) {
 			$text = $event['message']['text'];
 			// Get replyToken
 			$replyToken = $event['replyToken'];
-			
+			/*
 $servername = "botdata.ddns.net";
 $username = "root";
 $password = "1234";
@@ -46,7 +46,7 @@ if ($result->num_rows > 0) {
     //echo "0 results";
 }
 $conn->close();
-			
+		*/	
 $messages = [
 	'type'=> 'image',
     'originalContentUrl'=> 'https://www.mx7.com/i/2e3/0O4jrc.jpg',
