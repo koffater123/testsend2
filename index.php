@@ -49,8 +49,8 @@ $conn->close();
 			
 $messages = [
 	'type'=> 'image',
-    'originalContentUrl'=> 'https://drive.google.com/open?id=0B0JSYGQun7tOaWJVc1N3dUdZaFE',
-    'previewImageUrl'=> 'https://drive.google.com/open?id=0B0JSYGQun7tOaWJVc1N3dUdZaFE'
+    'originalContentUrl'=> 'https://www.dropbox.com/s/vbt5ghtax34o1v1/1.jpg?dl=0',
+    'previewImageUrl'=> 'https://www.dropbox.com/s/vbt5ghtax34o1v1/1.jpg?dl=0'
 			];
 		
 			//$messages =$nam;
