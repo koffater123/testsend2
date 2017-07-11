@@ -49,8 +49,8 @@ $conn->close();
 		*/	
 $messages = [
 	'type'=> 'image',
-    'originalContentUrl'=> 'https://www.uppic.org/thumb-95EE_5964DA25.jpg',
-    'previewImageUrl'=> 'https://www.uppic.org/thumb-95EE_5964DA25.jpg'
+    'originalContentUrl'=> 'https://drive.google.com/file/d/0B0JSYGQun7tOaWJVc1N3dUdZaFE/view?usp=sharing',
+    'previewImageUrl'=> 'https://drive.google.com/file/d/0B0JSYGQun7tOaWJVc1N3dUdZaFE/view?usp=sharing'
 			];
 		
 			//$messages =$nam;
