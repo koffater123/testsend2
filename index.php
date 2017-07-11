@@ -46,7 +46,11 @@ if ($result->num_rows > 0) {
     //echo "0 results";
 }
 $conn->close();*/
-$messages = "Die";
+			
+$messages = [
+				'type' => 'text',
+				'text' => $text
+			];
 		
 			//$messages =$nam;
 			// Make a POST Request to Messaging API to reply to sender
