@@ -49,8 +49,8 @@ $conn->close();
 			
 $messages = [
 	'type'=> 'image',
-    'originalContentUrl'=> 'https://drive.google.com/file/d/0B0JSYGQun7tOaWJVc1N3dUdZaFE',
-    'previewImageUrl'=> 'https://drive.google.com/file/d/0B0JSYGQun7tOaWJVc1N3dUdZaFE'
+    'originalContentUrl'=> 'http://thumbs1.ebaystatic.com/d/l225/m/mMw-RVRSheevBxBEneZiVfA.jpg',
+    'previewImageUrl'=> 'http://thumbs1.ebaystatic.com/d/l225/m/mMw-RVRSheevBxBEneZiVfA.jpg'
 			];
 		
 			//$messages =$nam;
