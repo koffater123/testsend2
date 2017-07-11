@@ -17,6 +17,7 @@ if (!is_null($events['events'])) {
 			$text = $event['message']['text'];
 			// Get replyToken
 			$replyToken = $event['replyToken'];
+			/*
 $servername = "110.78.129.10";
 $username = "root";
 $password = "1234";
@@ -44,7 +45,7 @@ if ($result->num_rows > 0) {
 } else {
     //echo "0 results";
 }
-$conn->close();
+$conn->close();*/
 $messages = "Die";
 		
 			//$messages =$nam;
