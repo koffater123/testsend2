@@ -49,8 +49,8 @@ $conn->close();
 			
 $messages = [
 	'type'=> 'image',
-    'originalContentUrl'=> 'http://botdata.ddns.net/1.jpg',
-    'previewImageUrl'=> 'http://botdata.ddns.net/1.jpg'
+    'originalContentUrl'=> 'https://cdn.shopify.com/s/files/1/0379/7669/products/sampleset2_1024x1024.JPG?v=1458740363',
+    'previewImageUrl'=> 'https://cdn.shopify.com/s/files/1/0379/7669/products/sampleset2_1024x1024.JPG?v=1458740363'
 			];
 		
 			//$messages =$nam;
