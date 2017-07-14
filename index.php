@@ -21,24 +21,25 @@ if (!is_null($events['events'])) {
 			// Build message to reply back
 			$messages = array(
       				'type'=> 'template',
-      				'altText'=> 'this is a confirm template',
+      				'altText'=> 'this is a buttons template',
     				'template'=>array (
-         				'type'=> 'confirm',
-         				'text'=> 'Are you sure?',
+         				'type'=> 'buttons',
+         				'thumbnailImageUrl'=> 'https://example.com/bot/images/image.jpg',
+      					'title'=> 'Menu',
+      					'text'=> 'Please select',
         			 	'actions'=>array (
       						array(
-        					'type'=> 'message',
-        					'label'=> 'Yes',
-							'text'=> 'yes'
+        					'type'=> 'postback',
+        					'label'=> '1',
+							'data'=> 'action=buy&itemid=123'
 					  			),array(
-								'type'=> 'message',
-								'label'=> 'No',
-								'text'=> 'no'
+								'type'=> 'postback',
+        						'label'=> '2',
+								'data'=> 'action=buy&itemid=123'
 					  				)
 					 		)
 							)
 							);
-	 
 		
 			// Make a POST Request to Messaging API to reply to sender
 			$url = 'https://api.line.me/v2/bot/message/reply';
@@ -65,5 +66,4 @@ if (!is_null($events['events'])) {
 	}
 }
 echo "OK";
-?>
 
