@@ -1,5 +1,4 @@
 
-//$access_token = 'bnIAGqcA6ofn7+FQheIsUheTKpCBW+ykQgLIg+jjSMts39TV+io9w4Pc3IHfEmK7RA2jkLXfYgrhxgPMX8DaHJszuHnaSJ9oHJhoUdadNXPCOXAqoBYR+FtV5rlBOFSzOx2LXsTmgYBdis/FGNiWyQdB04t89/1O/w1cDnyilFU=';
 <?php
 $access_token = 'bnIAGqcA6ofn7+FQheIsUheTKpCBW+ykQgLIg+jjSMts39TV+io9w4Pc3IHfEmK7RA2jkLXfYgrhxgPMX8DaHJszuHnaSJ9oHJhoUdadNXPCOXAqoBYR+FtV5rlBOFSzOx2LXsTmgYBdis/FGNiWyQdB04t89/1O/w1cDnyilFU=';
 
@@ -13,53 +12,40 @@ if (!is_null($events['events'])) {
 	foreach ($events['events'] as $event) {
 		// Reply only when message sent is in 'text' format
 		if ($event['type'] == 'message' && $event['message']['type'] == 'text') {
-			// Get text sent
-			$text = $event['message']['text'];
+			
 			// Get replyToken
 			$replyToken = $event['replyToken'];
-			/*
-$servername = "botdata.ddns.net";
-$username = "root";
-$password = "1234";
-$dbname = "db";
-
-$conn = new mysqli($servername, $username, $password, $dbname);
-			
-// Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-	
-} 
-
-$sql = "SELECT id, name FROM id";
-$result = $conn->query($sql);
-
-if ($result->num_rows > 0) {
-    // output data of each row
-    while($row = $result->fetch_assoc()) {
-		$nam = $row["name"];
-        //echo "id: " . $row["id"]. " - Name: " . $row["name"]. "<br>";
+			// Get text sent
+			//$text = $event['replyToken'];
+			$text = $event['source']['userId'];
+			// Build message to reply back
+			$messages = array(
+      				'type'=> 'template',
+      				'altText'=> 'this is a confirm template',
+    				'template'=>array (
+         				'type'=> 'confirm',
+         				'text'=> 'Are you sure?',
+        			 	'actions'=>array (
+      						array(
+        					'type'=> 'message',
+        					'label'=> 'Yes',
+							'text'=> 'yes'
+					  			),array(
+								'type'=> 'message',
+								'label'=> 'No',
+								'text'=> 'no'
+					  				)
+					 		)
+							)
+							);
+	 
 		
-		
-    }
-} else {
-    //echo "0 results";
-}
-$conn->close();
-		*/	
-$messages = [
-	'type'=> 'image',
-    'originalContentUrl'=> 'https://drive.google.com/uc?export=download&id=0B0JSYGQun7tOaWJVc1N3dUdZaFE',
-    'previewImageUrl'=> 'https://drive.google.com/uc?export=download&id=0B0JSYGQun7tOaWJVc1N3dUdZaFE'
-			];
-		
-			//$messages =$nam;
 			// Make a POST Request to Messaging API to reply to sender
 			$url = 'https://api.line.me/v2/bot/message/reply';
-			$data = [
+			$data = array(
 				'replyToken' => $replyToken,
-				'messages' => [$messages],
-			];
+				'messages' => $messages,
+			);
 			$post = json_encode($data);
 			$headers = array('Content-Type: application/json', 'Authorization: Bearer ' . $access_token);
 
@@ -73,7 +59,11 @@ $messages = [
 			curl_close($ch);
 
 			echo $result . "\r\n";
+			
+			$response = $bot->replyMessage($event->getReplyToken(), $outputText);
 		}
 	}
 }
 echo "OK";
+?>
+
