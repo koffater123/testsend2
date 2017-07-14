@@ -24,7 +24,7 @@ if (!is_null($events['events'])) {
       				'altText'=> 'this is a buttons template',
     				'template'=>array (
          				'type'=> 'buttons',
-         				'thumbnailImageUrl'=> 'https://example.com/bot/images/image.jpg',
+         				//'thumbnailImageUrl'=> 'https://example.com/bot/images/image.jpg',
       					'title'=> 'Menu',
       					'text'=> 'Please select',
         			 	'actions'=>array (array('type'=> 'message','label'=> '1','text'=> '1'),
