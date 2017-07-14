@@ -31,11 +31,11 @@ if (!is_null($events['events'])) {
       						array(
         					'type'=> 'postback',
         					'label'=> '1',
-							'data'=> 'action=buy&itemid=123'
+							'text'=> '1'
 					  			),array(
 								'type'=> 'postback',
         						'label'=> '2',
-								'data'=> 'action=buy&itemid=123'
+								'text'=> '2'
 					  				)
 					 		)
 							)
@@ -45,7 +45,7 @@ if (!is_null($events['events'])) {
 			$url = 'https://api.line.me/v2/bot/message/reply';
 			$data = array(
 				'replyToken' => $replyToken,
-				'messages' => [$messages],
+				'messages' => [$messages]
 			);
 			$post = json_encode($data);
 			$headers = array('Content-Type: application/json', 'Authorization: Bearer ' . $access_token);
