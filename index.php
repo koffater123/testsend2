@@ -31,11 +31,11 @@ if (!is_null($events['events'])) {
       						array(
         					'type'=> 'postback',
         					'label'=> '1',
-							'text'=> '1'
+							'data'=> '1'
 					  			),array(
 								'type'=> 'postback',
         						'label'=> '2',
-								'text'=> '2'
+								'data'=> '2'
 					  				)
 					 		)
 							)
