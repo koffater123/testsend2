@@ -29,11 +29,11 @@ if (!is_null($events['events'])) {
       					'text'=> 'Please select',
         			 	'actions'=>array (
       						array(
-        					'type'=> 'postback',
+        					'type'=> 'message',
         					'label'=> '1',
 							'data'=> '1'
 					  			),array(
-								'type'=> 'postback',
+								'type'=> 'message',
         						'label'=> '2',
 								'data'=> '2'
 					  				)
