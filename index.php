@@ -31,11 +31,11 @@ if (!is_null($events['events'])) {
       						array(
         					'type'=> 'message',
         					'label'=> '1',
-							'data'=> '1'
+							'text'=> '1'
 					  			),array(
 								'type'=> 'message',
         						'label'=> '2',
-								'data'=> '2'
+								'text'=> '2'
 					  				)
 					 		)
 							)
