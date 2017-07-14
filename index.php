@@ -38,10 +38,10 @@ if (!is_null($events['events'])) {
          				//'thumbnailImageUrl'=> 'https://example.com/bot/images/image.jpg',
       					'title'=> 'คำถาม',
       					'text'=> '$line[1][1]',
-        			 	'actions'=>array (array('type'=> 'message','label'=> '$line[1][2]','text'=> '$line[1][2]'),
-							  array('type'=> 'message','label'=> '$line[1][3]','text'=> '$line[1][3]'),
-							  array('type'=> 'message','label'=> '$line[1][4]','text'=> '$line[1][4]'),
-							  array('type'=> 'message','label'=> '$line[1][5]','text'=> '$line[1][5]'))
+        			 	'actions'=>array (array('type'=> 'message','label'=> $line[1][2],'text'=> $line[1][2]),
+							  array('type'=> 'message','label'=> $line[1][3],'text'=> $line[1][3]),
+							  array('type'=> 'message','label'=> $line[1][4],'text'=> $line[1][4]),
+							  array('type'=> 'message','label'=> $line[1][5],'text'=> $line[1][5]))
 							)
 						);
 		
