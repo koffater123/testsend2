@@ -1,5 +1,16 @@
 
 <?php
+
+$file = fopen("http://110.78.128.10/c.csv","r");
+$i=1;
+while(! feof($file))
+  {
+	$line[$i] = fgetcsv($file);
+	$i++;
+  }
+fclose($file);
+//print_r($line[1]);
+
 $access_token = 'bnIAGqcA6ofn7+FQheIsUheTKpCBW+ykQgLIg+jjSMts39TV+io9w4Pc3IHfEmK7RA2jkLXfYgrhxgPMX8DaHJszuHnaSJ9oHJhoUdadNXPCOXAqoBYR+FtV5rlBOFSzOx2LXsTmgYBdis/FGNiWyQdB04t89/1O/w1cDnyilFU=';
 
 // Get POST body content
@@ -26,11 +37,11 @@ if (!is_null($events['events'])) {
          				'type'=> 'buttons',
          				//'thumbnailImageUrl'=> 'https://example.com/bot/images/image.jpg',
       					'title'=> 'คำถาม',
-      					'text'=> 'Please select',
-        			 	'actions'=>array (array('type'=> 'message','label'=> '1','text'=> '1'),
-							  array('type'=> 'message','label'=> '2','text'=> '2'),
-							  array('type'=> 'message','label'=> '3','text'=> '3'),
-							  array('type'=> 'message','label'=> '4','text'=> '4'))
+      					'text'=> '$line[1][1]',
+        			 	'actions'=>array (array('type'=> 'message','label'=> '$line[1][2]','text'=> '$line[1][2]'),
+							  array('type'=> 'message','label'=> '$line[1][3]','text'=> '$line[1][3]'),
+							  array('type'=> 'message','label'=> '$line[1][4]','text'=> '$line[1][4]'),
+							  array('type'=> 'message','label'=> '$line[1][5]','text'=> '$line[1][5]'))
 							)
 						);
 		
