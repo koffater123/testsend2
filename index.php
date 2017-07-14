@@ -27,19 +27,12 @@ if (!is_null($events['events'])) {
          				'thumbnailImageUrl'=> 'https://example.com/bot/images/image.jpg',
       					'title'=> 'Menu',
       					'text'=> 'Please select',
-        			 	'actions'=>array (
-      						array(
-        					'type'=> 'message',
-        					'label'=> '1',
-							'text'=> '1'
-					  			),array(
-								'type'=> 'message',
-        						'label'=> '2',
-								'text'=> '2'
-					  				)
-					 		)
+        			 	'actions'=>array (array('type'=> 'message','label'=> '1','text'=> '1'),
+							  array('type'=> 'message','label'=> '2','text'=> '2'),
+							  array('type'=> 'message','label'=> '3','text'=> '3'),
+							  array('type'=> 'message','label'=> '4','text'=> '4'))
 							)
-							);
+						);
 		
 			// Make a POST Request to Messaging API to reply to sender
 			$url = 'https://api.line.me/v2/bot/message/reply';
