@@ -25,7 +25,7 @@ if (!is_null($events['events'])) {
     				'template'=>array (
          				'type'=> 'buttons',
          				//'thumbnailImageUrl'=> 'https://example.com/bot/images/image.jpg',
-      					'title'=> 'Menu',
+      					'title'=> 'คำถาม',
       					'text'=> 'Please select',
         			 	'actions'=>array (array('type'=> 'message','label'=> '1','text'=> '1'),
 							  array('type'=> 'message','label'=> '2','text'=> '2'),
