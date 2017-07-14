@@ -37,7 +37,7 @@ if (!is_null($events['events'])) {
          				'type'=> 'buttons',
          				//'thumbnailImageUrl'=> 'https://example.com/bot/images/image.jpg',
       					'title'=> 'คำถาม',
-      					'text'=> '$line[1][1]',
+      					'text'=> $line[1][1],
         			 	'actions'=>array (array('type'=> 'message','label'=> $line[1][2],'text'=> $line[1][2]),
 							  array('type'=> 'message','label'=> $line[1][3],'text'=> $line[1][3]),
 							  array('type'=> 'message','label'=> $line[1][4],'text'=> $line[1][4]),
