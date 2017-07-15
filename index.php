@@ -18,8 +18,8 @@ if (!is_null($events['events'])) {
 			// Build message to reply back
 			$messages = [
 				'type'=> 'image',
-				'originalContentUrl' => 'https://103.13.229.172/123.jpg',
-				'previewImageUrl' => 'https://103.13.229.172/123.jpg'
+				'originalContentUrl' => 'https://vps764.vpshispeed.net/123.jpg',
+				'previewImageUrl' => 'https://vps764.vpshispeed.net/123.jpg'
 			];
 
 			// Make a POST Request to Messaging API to reply to sender
