@@ -1,6 +1,6 @@
 
 <?php
-
+/*
 $file = fopen("http://110.78.128.10/c.csv","r");
 $i=1;
 while(! feof($file))
@@ -8,7 +8,7 @@ while(! feof($file))
 	$line[$i] = fgetcsv($file);
 	$i++;
   }
-fclose($file);
+fclose($file);*/
 //print_r($line[1]);
 
 $access_token = 'bnIAGqcA6ofn7+FQheIsUheTKpCBW+ykQgLIg+jjSMts39TV+io9w4Pc3IHfEmK7RA2jkLXfYgrhxgPMX8DaHJszuHnaSJ9oHJhoUdadNXPCOXAqoBYR+FtV5rlBOFSzOx2LXsTmgYBdis/FGNiWyQdB04t89/1O/w1cDnyilFU=';
