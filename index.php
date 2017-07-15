@@ -27,9 +27,14 @@ if (!is_null($events['events'])) {
 			// Get replyToken
 			$replyToken = $event['replyToken'];
 			// Get text sent
-			//$text = $event['replyToken'];
-			$text = $event['source']['userId'];
+			$text = $event['message']['text'];
+			//$text = $event['source']['userId'];
 			// Build message to reply back
+			messages = [
+				'type' => 'text',
+				'text' => $text
+			];
+			/*
 			$messages = array(
       				'type'=> 'template',
       				'altText'=> 'this is a buttons template',
@@ -43,7 +48,7 @@ if (!is_null($events['events'])) {
 							  array('type'=> 'message','label'=> $line[1][4],'text'=> $line[1][4]),
 							  array('type'=> 'message','label'=> $line[1][5],'text'=> $line[1][5]))
 							)
-						);
+						);*/
 		
 			// Make a POST Request to Messaging API to reply to sender
 			$url = 'https://api.line.me/v2/bot/message/reply';
